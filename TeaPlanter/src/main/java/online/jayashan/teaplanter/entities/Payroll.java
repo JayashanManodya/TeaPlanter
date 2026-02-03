@@ -8,9 +8,9 @@ import lombok.NoArgsConstructor;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "payroll")
+@Table(name = "Payroll")
 @Data
-public class payroll {
+public class Payroll {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id ;
