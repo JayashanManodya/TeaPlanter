@@ -17,12 +17,13 @@ public class Inventory {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String itemName;
+    @Column(nullable = false)
+    private String name; // Fertilizer, Pesticide, Tools
     private String category;
-    private int quantity;
-    private String unit;
+    private Double currentStock;
+    private String unit; // kg, liters, units
     private double unitPrice;
-    private String status;
+    private Double reorderLevel;
 
 }
 
