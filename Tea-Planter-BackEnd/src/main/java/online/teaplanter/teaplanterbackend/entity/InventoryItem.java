@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "inventory_items")
+@Table (name = "inventory_items")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -18,8 +18,8 @@ public class InventoryItem {
 
     private String name;
     private String category;
-    private double currentStock;
-    private double unitPrice;
     private String unit;
+    private double unitPrice;
+    private double currentStock;
     private double recorderLevel;
 }
